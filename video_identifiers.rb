@@ -16,6 +16,7 @@ VIDEO_IDENTIFIERS = [
   { video_id: "UlHxeXuWjkI", title: "[English practice Vtuber]Slay the Spire is DRUG." },
   { video_id: "e5HNvct_008", title: "[English practice Vtuber]I Play horror games, DARKWOOD." },
   { video_id: "DL6pKypNIzM", title: "[English practice Vtuber]Q&A zatsudan DAYO" },
+  { video_id: "BsHbrXuR8eY", title: "【ガチスレスパ】雑談しながらSlay the Spireアセ4　新しく覚えた英語など【ディフェクト心臓アセ20攻略】" },
   { video_id: "P_YXAukoH2I", title: "[English practice Vtuber]About karaoke stream!!! and so on" },
   { video_id: "pMmp2zdYeDQ", title: "[OMORI]日本語版がないから英語でOMORI[EN practice Vtuber]" },
   { video_id: "_aQP-MXCdxY", title: "OMORI #2 + Reading donation & Amazon gift card" },
