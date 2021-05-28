@@ -13,8 +13,6 @@ require_relative 'stream_labs/person_specific_stats_analyzer'
 require_relative 'superchat/breakdown_by_currency_analyzer'
 
 def run_stats(extracted_chat_events)
-  # StreamLabs::TotalStatsAnalyzer.new(extracted_chat_events).analyze
-  # Superchat::BreakdownByCurrencyAnalyzer.new(extracted_chat_events).analyze
   BusyMomentAnalyzer.new(extracted_chat_events).analyze
 end
 
