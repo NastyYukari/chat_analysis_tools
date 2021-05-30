@@ -3,6 +3,7 @@
 
 # Videos without chat data, no need to include them in VIDEO_IDENTIFIERS:
 # { video_id: "f-6w6p0WLt4", title: "Uninanako" },
+# { video_id: "DL6pKypNIzM", title: "[English practice Vtuber]Q&A zatsudan DAYO" },
 # { video_id: "SXZIc7quqi8", title: "[EN practice JP Vtuber]FIRST PLAY!!!! 東方輝針城 ～ Double Dealing Character[Touhou]" }, # Needs manually inputted data
 # { video_id: "FIrnzgD_fqw", title: "[EN practice JP Vtuber]I try MBTI!!!" }, # If it's possible
 # { video_id: "KyazY4OQHaY", title: "#1 Drawing my picnic on XP hill[English practice Vtuber]" }, # At least add my dono
@@ -15,8 +16,8 @@ VIDEO_IDENTIFIERS = [
   { video_id: "3uHqcLj0wlI", title: "[duolingo]Beatani(Cute and funny bear)learns English." },
   { video_id: "UlHxeXuWjkI", title: "[English practice Vtuber]Slay the Spire is DRUG." },
   { video_id: "e5HNvct_008", title: "[English practice Vtuber]I Play horror games, DARKWOOD." },
-  { video_id: "DL6pKypNIzM", title: "[English practice Vtuber]Q&A zatsudan DAYO" },
   { video_id: "BsHbrXuR8eY", title: "【ガチスレスパ】雑談しながらSlay the Spireアセ4　新しく覚えた英語など【ディフェクト心臓アセ20攻略】" },
+  { video_id: "7J5uO6Cd1yg", title: "1month & 1k sub karaoke PARTY" },
   { video_id: "P_YXAukoH2I", title: "[English practice Vtuber]About karaoke stream!!! and so on" },
   { video_id: "pMmp2zdYeDQ", title: "[OMORI]日本語版がないから英語でOMORI[EN practice Vtuber]" },
   { video_id: "_aQP-MXCdxY", title: "OMORI #2 + Reading donation & Amazon gift card" },
@@ -64,7 +65,11 @@ VIDEO_IDENTIFIERS = [
   { video_id: "iUf3XIooZHk", title: "[ISAAC]I'm 25yo 3k subs wholesome not-menhera bear dazo!?!?[REBIRTH]" },
   { video_id: "8un7wHp9l9U", title: "[性癖暴露/My fetishism] give me vanilla ice cream, save me from the hell" },
   { video_id: "DYE9M9cora4", title: "[JP subculture in Nakano] I just want to walk while talking to you [中野ブロードウェイIKZ]" },
-  { video_id: "kE8sYz3aKDk", title: "[chatting with special water] not for you but for me, I just wanna have fun" }
+  { video_id: "kE8sYz3aKDk", title: "[chatting with special water] not for you but for me, I just wanna have fun" },
+  { video_id: "nrH4pjQ0_fU", title: "[ISAAC]SHE LEFT ME ALONE, KANIKO FOREVER IN MY MEMORY[REBIRTH]" },
+  { video_id: "Dv5Tns5TFJQ", title: "[chatting with special water] well I can't think anything now" },
+  { video_id: "2UbHTtbg_SY", title: "[chatting with special water] well I can't think anything now" },
+  { video_id: "SfqkCqKwP8c", title: "[歌枠/KARAOKE]thank you 3k subs" }
 ].map { |video_entry| video_entry[:video_id] }
  .uniq
  .freeze
