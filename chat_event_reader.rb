@@ -7,13 +7,13 @@ class ChatEventReader
     @serialized_chat_lines = serialized_chat_lines
   end
 
-  def extract_donos_from_serialized_chat_lines
-    @serialized_chat_lines.map(&method(:build_chat_message)).reject(&:nil?)
+  def extract_chat_events_from_serialized_chat_lines
+    @serialized_chat_lines.map(&method(:build_chat_event)).reject(&:nil?)
   end
 
   private
 
-  def build_chat_message(serialized_chat_line)
+  def build_chat_event(serialized_chat_line)
     return unless only_one_pipe_character?(serialized_chat_line)
 
     if StreamLabs::DonationMessageBuilder.matches_general_format?(serialized_chat_line)
@@ -31,4 +31,3 @@ class ChatEventReader
     serialized_chat_line.chars.count('|') == 1
   end
 end
-
