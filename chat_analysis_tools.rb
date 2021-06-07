@@ -43,5 +43,37 @@ def read_chat_lines_from_cache_or_download_a_copy_and_cache(video_id)
     .read_chat_lines_from_cache_or_download_a_copy_and_cache
 end
 
-WikiKeywordFinder.new(extract_all_stream_chat_events).analyze
-BusyMomentAnalyzer.new(extract_all_chat_events_from_public_stream_urls).analyze
+WIKI_KEYWORDS = [
+  # "balon",
+  # "baron",
+  # "burger",
+  # "caniko",
+  # "canned water",
+  # "cunnyko",
+  # "funny water",
+  # "hazukashiful",
+  # "kaniko",
+  # "kichigai stalker",
+  # "kichigai",
+  # "menhera stalker",
+  # "menhera",
+  # "menhera",
+  # "muzukashiful",
+  # "onions",
+  # "pregnancy",
+  # "pregnant",
+  # "remote kid",
+  # "remote",
+  # "soy",
+  # "soylent",
+  # "stalker",
+  # "tabun maybe",
+  # "tabun",
+  # "wiki anon",
+  # "wiki",
+  # "wikianon",
+  # "gray"
+].sort.freeze
+
+WikiKeywordFinder.new(extract_all_stream_chat_events, WIKI_KEYWORDS).analyze
+# BusyMomentAnalyzer.new(extract_all_chat_events_from_public_stream_urls).analyze
