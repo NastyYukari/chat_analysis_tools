@@ -8,7 +8,6 @@ class WikiKeywordFinder
     @keywords
       .flat_map(&method(:all_instances_of_keyword_in_stream_chat_events))
       .reject(&:nil?)
-      .each(&method(:pp))
   end
 
   private

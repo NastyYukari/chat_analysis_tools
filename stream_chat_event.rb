@@ -6,7 +6,7 @@ class StreamChatEvent
     @chat_event = chat_event
   end
 
-  attr_reader :video_identifier
+  attr_reader :chat_event, :video_identifier
 
   def message
     @chat_event.rest_of_message
